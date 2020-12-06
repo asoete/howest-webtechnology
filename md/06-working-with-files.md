@@ -10,7 +10,7 @@ By IO we mean working with files...
 
 ## Read a file
 
-There are multiple way to read a file:
+There are multiple ways to read a file:
 
 * m4_phpfunc(file)
 * m4_phpfunc(file_get_contents)
@@ -28,7 +28,7 @@ $lines = file('/path/to/file.txt');
 
 ### File_get_contents
 
-This function takes filename as argument and returns a string containing the
+This function takes a filename as argument and returns a string containing the
 complete file contents (hence the name).
 
 ```php
@@ -75,7 +75,7 @@ $delete_ok = unlink('/path/to/file.txt');
 ```
 
 ## Rename a file
-A file can be deleted via m4_phpfunc(unlink).
+A file can be renamed via m4_phpfunc(rename).
 
 ```php
 $rename_ok = rename('/path/to/file.txt', '/path/to-new-filename.txt');

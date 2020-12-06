@@ -27,11 +27,11 @@ This previous command will start a web-server in the current working directory
 and will be accessible at the URL: `http://localhost:8080`.
 
 You can pick any port, as long as it is between 1024 and 65535. By convention
-`8000` or `8080` are picked because of he resemblance with the official
+`8000` or `8080` are picked because of the resemblance with the official
 HTTP-port: `80`.
 
 As mentioned before, by default the server will start in the current working
-directory. I you wish the root of the site to be another directory, specify it
+directory. If you wish the root of the site to be another directory, specify it
 via the `-t` option.
 
 m4_info([[More info about this command can be found by executing the `man php`
@@ -124,9 +124,9 @@ Create a web-page who includes another file.
 ## Forms
 
 Forms can be used to send data from the web-page to the server. This data can
-be read an processed via PHP.
+be read and processed via PHP.
 
-A from is composed out of a form-tag and data tags.
+A form is composed out of a form-tag and data tags.
 
 ### Form tag
 
@@ -145,7 +145,7 @@ The form tag has two required attributes:
 
 This attribute specifies the page the data should be sent to.
 
-The send the data back to the same page, specify: `#` or the URL of the current
+To send the data back to the same page, specify: `#` or the URL of the current
 page.
 
 ```html
@@ -159,7 +159,7 @@ The method defines how the data should be send to the server.
 
 There are two main methods:
 
-* GET:
+* GET
 * POST
 
 ##### GET
@@ -222,11 +222,11 @@ Types:
 * radio
 * text
 
-The value attributes holds the default value of the element. If not defined,
+The value attribute holds the default value of the element. If not defined,
 the element will be empty.
 
-There the `radio` and `checkbox` type don't take a value (only) a state, the
-`checked` can be replaces the value attribute.
+The `radio` and `checkbox` type don't take a value (only) but a state, the
+`checked` replaces the value attribute.
 
 m4_embed_php_as_html(php-and-html/input,330px,.html)
 
@@ -316,7 +316,7 @@ Array(
 */
 ```
 
-This data can no be processed via PHP.
+This data can now be processed via PHP.
 
 To test if data was submitted, the value of the _submit button_ can be used.
 
@@ -447,7 +447,7 @@ table.
 * Extra: throw error if number of fields is incorrect
 
 ```
-firt name, last name, gender, age
+first name, last name, gender, age
 john, doe, male, 21
 jane, doe, female, 18
 jake, smith, male, 20
@@ -460,9 +460,9 @@ m4_page(php-and-html/csv,250px)
 m4_dnl -----------------------------------------------------------------------
 
 m4_exercise([[
-Create a webtool which generates random sequences sequences. The specifics of the sequence should be configurable:
+Create a webtool which generates random sequences. The specifics of the sequence should be configurable:
 
-Allow the user tot specify:
+Allow the user to specify:
 
 * Sequence header (if not defined use: `Random sequence #1`)
 * The alfabet the sequence should be composed of (if not defined use `ATGC`)

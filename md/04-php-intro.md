@@ -28,7 +28,7 @@ PHP interprets only the code enclosed within the special PHP-tags.
 
 m4_embed_php(php-basics/php-tags)
 
-Notice that the code outside of the PHP-tags is not interpreted and this printed out unchanged.
+Notice that the code outside of the PHP-tags is not interpreted and is printed out unchanged.
 
 A valid PHP instruction generally has the form:
 
@@ -466,7 +466,7 @@ This inter-page data is typically:
 * user info
 * preferences
 
-#### $_FILE
+#### $_FILES
 
 When files are uploaded, PHP stores information about these files in this array.
 
@@ -765,7 +765,7 @@ The m4_phpfunc(empty) function checks whether a PHP variable has an empty value.
 
 Examples of empty values: `null`, `""`, `0`, ...
 
-m4_embed_php(php-basics/isset)
+m4_embed_php(php-basics/empty)
 
 [[###]] m4_phpfunc(strlen)
 
@@ -781,7 +781,7 @@ m4_embed_php(php-basics/str_split)
 
 [[###]] m4_phpfunc(explode)
 
-The m4_phpfunc(explode) function parses a string into individual pieces based on an delimiter and returns an array where each item in the array corresponds to a section in the original string separated by the delimiter.
+The m4_phpfunc(explode) function parses a string into individual pieces based on a delimiter and returns an array where each item in the array corresponds to a section in the original string separated by the delimiter.
 
 m4_embed_php(php-basics/explode)
 
